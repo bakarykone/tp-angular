@@ -1,1 +1,5 @@
-<p>categories works!</p>
+<div class="category-cards">
+    <div *ngFor="let category of categories" class="category-card" (click)="navigateToQuiz(category.id)">
+      <h3>{{ category.categoryLabel }}</h3>
+    </div>
+</div>
